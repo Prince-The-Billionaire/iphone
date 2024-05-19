@@ -38,7 +38,7 @@ const HowItWorks = () => {
               </h2>
 
               <p className='hiw-subtitle'>
-                It's here. The biggest redesign in the
+                It{'\''}s here. The biggest redesign in the
                 history of Apple GPUs.
               </p>
             </div>
