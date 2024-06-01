@@ -1,13 +1,14 @@
 "use client"
 import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { useRef } from 'react'
+import { useWindowWidth } from '@react-hook/window-size'
 
 const Hero = () => {
-  const [videoSrc, setVideoSrc] = useState(
-    window.innerWidth < 760 ? '/assets/videos/smallHero.mp4':
-    '/assets/videos/hero.mp4'
-  )
+
+  const [videoSrc, setVideoSrc] = useState(window.innerWidth < 760 ? '/assets/videos/smallHero.mp4' : '/assets/videos/hero.mp4')
 
   const handleVideoSrcSet = () => {
     if (window.innerWidth < 760) {
